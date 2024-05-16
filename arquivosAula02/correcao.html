@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        // let produtos = ['arroz', 'feijão', 'tomate', 'café']
+
+        // if( produtos.includes('arroz')){
+        //     console.log('arroz está no estoque')
+        // }
+        // else{
+        //     console.log('arroz não está no estoque')
+        // }
+
+        //['banana', 'maçã', 'uva']
+
+        let estoque = [
+            ['banana', 10],
+            ['maçã', 2],
+            ['uva',10],
+            ['banana', 10]
+        ]
+
+        let produtos = []
+
+        for( let elemento of estoque) {
+            console.log(elemento)
+        }
+
+        for(let i =0 ; i< estoque.length; i++){
+
+            let nomeProduto = estoque[i][0]
+            produtos.push(nomeProduto)
+        }
+        console.log(produtos)
+
+        console.log(produtos.includes('banana'))
+
+
+    </script>
+    
+</body>
+</html>
