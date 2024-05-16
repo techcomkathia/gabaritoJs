@@ -1,4 +1,4 @@
-// 1. Crie uma estrutura que receba o nome, idade e curso de um aluno. Adicione essas informações em um array e exiba o array no console.
+//Crie uma estrutura que receba o nome, idade e curso de um aluno. Adicione essas informações em um array e exiba o array no console.
 //£
 let nome = prompt('Digite seu nome')
 let idade = prompt('Digite sua idade')
