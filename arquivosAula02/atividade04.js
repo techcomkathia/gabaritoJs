@@ -1,15 +1,10 @@
-// Você está gerenciando uma fila de atendimento ao cliente. Novos clientes chegam e devem ser adicionados ao final da fila. Dado um array representando a fila, adicione um novo cliente ao final da fila e imprima o estado atualizado da fila.
-// Fila: 'Ana', 'Bruno' e 'Carla'
-
-let  fila = ['Paulo', 'Maria']
-
-fila.push('Carla') //insere no final
-fila.push('Maíra')
-fila.push('Nobre')
-
-let pessoasAtendidas=[]
-let pes =[]
-pes= fila.shift()
-pessoasAtendidas.push(pes)
-console.log(fila)
-console.log(pessoasAtendidas)
+// Considere o seguinte array de notas [5.5, 6, 4.3, 7, 3.2, 8.2]. Crie um algoritmo que percorra esse array. E caso encontre alguma nota abaixo da média (média = 6), acrescente mais um ponto neste item. Ao final, exiba o array no console.
+//£
+let notas = [5.5, 6, 4.3, 7, 3.2, 8.2]
+console.log(notas)
+for( let indice = 0; indice<= notas.length-1; indice++){
+    if(notas[indice]<6){
+        notas[indice]+=1
+    }
+}
+console.log(notas)

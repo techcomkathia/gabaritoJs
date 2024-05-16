@@ -18,13 +18,13 @@
     <header>
         <ul class="nav nav-tabs">
             <li class="nav-item">
-              <a class="nav-link " aria-current="page" href="index.html">Aula 01</a>
+              <a class="nav-link active " href="index.html">Aula 01</a>
             </li>
             <li class="nav-item">
               <a class="nav-link " href="aula02.html">Aula 02</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="aula03.html">Aula 03</a>
+              <a class="nav-link " href="aula03.html">Aula 03</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="aula04.html" tabindex="-1" >Aula 04</a>
@@ -35,44 +35,13 @@
     <main  class="container my-5">
         <h1 class="text-center mb-4">Exercícios Aula 03- Lógica de Programação</h1>
 
-        <ul class="list-group list-group-numbered">
-          <li class="list-group-item"> Leia o preço de um produto e a cor da sua etiqueta. De acordo com a cor da etiqueta aplique um desconto sobre o produto. 
-            Verde - 10% | Amarelo - 20% | Azul - 30 % | Vermelho 40%    
-              <br>
-              <button class="btn btn-dark ms-2" onclick="mostrarResposta('q1')">Resposta</button>
-          </li> 
-          <div id="q1" class="resposta d-none ">
-            <pre>
-              <code>
-              let desconto = 0
-              let cor = prompt('Digite a cor da etiqueta do produto: \n Verde \n Amarelo \n Azul \n Vermelho')
-              let valor = Number(prompt('Digite o valor do produto'))
-              let novoPreco = 0
-              
-              switch (corEtiqueta) {
-                  case 'Verde':
-                      desconto = 0.1; // 10%
-                      break;
-                  case 'Amarelo':
-                      desconto = 0.2; // 20%
-                      break
-                  case 'Azul':
-                      desconto = 0.3; // 30%
-                      break
-                  case 'Vermelho':
-                      desconto = 0.4; // 40%
-                      break
-                  default:
-                      console.log('Cor de etiqueta inválida');
-                      desconto= 0 // Retorna o preço sem desconto se a cor da etiqueta for inválida
-              }
-              
-              novoPreco = valor * (1 - desconto)
-              console.log(`O valor do produto com a etiqueta ${cor} teve o valor de R$ ${valor} ajustado para ${novoPreco} `) 
-              </code>
-            </pre>             
-        </div>
-    </ul>
+        <ul class="list-group list-group-numbered" id="questoes">       
+        </ul>
     </main>
+
+
+    <script src="script.js"></script>
+
+    
 </body>
 </html>
